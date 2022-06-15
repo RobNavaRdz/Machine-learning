@@ -75,9 +75,3 @@ p.set_ylabel("Emission")
 plt.scatter(train.ENGINESIZE, train.CO2EMISSIONS,  color='orange')
 plt.scatter(train.CYLINDERS, train.CO2EMISSIONS,  color='red')
 plt.scatter(train.FUELCONSUMPTION_COMB, train.CO2EMISSIONS,  color='green')
-
-xT=x.transpose()
-x2=regr.coef_[0][0]*xT[0] + regr.coef_[0][1]*xT[1] + regr.coef_[0][2]*xT[2]
-x3=x2.transpose()
-
-plt.plot(x,  x3 + regr.intercept_[0], '-b')
