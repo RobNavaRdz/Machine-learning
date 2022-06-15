@@ -2,7 +2,7 @@
 """
 Created on Fri Mar  4 13:02:34 2022
 
-@author: selecto
+@author: Roberto Nava
 """
 
 import matplotlib.pyplot as plt
@@ -79,7 +79,7 @@ plt.ylabel("Emission")
 
 #----Convierto a arreglo los datos de prueba para x e y-----------------------
 test_x = np.asanyarray(test[['ENGINESIZE']])
-test_y = np.asanyarray(test[['CO2EMISSIONS']])#--esto no es necesario
+test_y = np.asanyarray(test[['CO2EMISSIONS']])
 test_y_ = regr.predict(test_x)#----realiza el calculo de valores para estas x
 print(test_y_)
 #-----Imprimo los valores de medicion del error del modelo--------------------
