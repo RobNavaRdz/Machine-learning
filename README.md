@@ -1,2 +1,2 @@
 # Machine-learning
-Machine learning projects
+Machine learning projects learned and modified from IBM course
